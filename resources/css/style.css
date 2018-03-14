@@ -202,6 +202,8 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
+    /*image stays in the same place as we scroll*/
+    background-attachment: fixed;
     /*100 % of the view port*/
     height: 100vh;
 }
@@ -366,8 +368,6 @@ btn-app:visited {
 
 /*****************************************/
 
-section-cities {}
-
 .box img {
     width: 100%;
     margin-bottom: 15px;
@@ -375,4 +375,47 @@ section-cities {}
 
 .city-feature {
     margin-bottom: 5px;
+}
+
+/*****************************************/
+
+/*testimonials*/
+
+/*****************************************/
+
+.section-testimonials {
+    backgroundsize: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.79)), url(img/back-customers.jpg);
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
